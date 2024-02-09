@@ -7,35 +7,7 @@ in which treasures are collected while walking in it.
 General Information
 
 The game is played in a 25*55 game field including walls. There are two competitors: Player (P) and Computer (X). There are some treasures/numbers in the game, which the player collects to increase his/her score. The aim of the game is gaining the highest score.
-
- 
-#######################################################   Input
-# : O :1:::1:O OOX: :O2:O2: : ::1::: 3:: OO: :: ::O:::#   <<<<<<<<<<<<<<<
-#OP:: :: :   ::::OOX:: O::: ::: ::::::::::: :::2::::: #   12O:11O2e1O2:3X
-#: ::::  :: :: ::::: :O::::O:: :::::::: O:::::  :: :: #   <<<<<<<<<<<<<<<
-#:O X: 2: :O:O 1   ::::  O:: ::O:::::O1 :::  ::O::::::#         
-#:::O2O :O:OO:O: : ::::: :: :::::::: : :O::O :O:::OOX #    
-#O::O::  :::::::::::::: O:   :::O:::: ::::::OO::O O2 O#      |   |
-#::::::O::::: :2OOO::  :::::::OO:::O OO :: O::::: ::::#      |   |
-##################################################O:O:#      | 2 |
-#::  ::O ::O:    : ::::2:: : O::::::::::O:::::::::::: #      | 1 |
-# :OO: OO :O::O:OO1::: :::::O:1::::::: :::::::::::: :O#      | 3 |
-#O::O O::O::::::O:1:: ::O: :: ::::OO:::::: :::: ::::O:#      | 2 |
-#: :: :O O :O:: :: : O ::  ::: ::1::O:O:: O:  :O2 :::O#      | 1 |
-#:O::O:::O:::::   :::: :OOO::: OXO OO::::OO  : :::OOO:#      | 2 |
-#:: :OOOO:::::::O::O:O::OOO:O:O: OOO::O:::OO::::::O:: #      +---+
-#  ::::::O::::::::::::: ::3 ::::::O:::1 :::O: :O: O:::#     Backpack
-#:::O##################################################  
-#O:::::O:::::::: ::O  :::::::::: :::::::::3 O:: ::: ::#  
-#:::: :: ::  X:: 2 : ::: :: :: :O : ::::: ::::  2:::::#   Teleport :     4
-#3::O  ::::: :::   :O :O:O::::::: :::::: : O: ::O : : # 
-#OO::::::::  :::  ::O: : :::::::::::::::: O:O O::: : O#   Score    :  1460
-#::3:: :::2::::OO ::X:::O : OO:  :O::::: :2::OOOO: : :# 
-# ::::O  O  : ::OO: : ::::3::::OO:::::  O::O:O:::  :OO#   Time     :    58
-#OO::O::O:::: :::O:::OO1:::::::O:::::: :O :O:OO  O::O:#
-#######################################################
-
- 
+![image](https://github.com/hlnarya/Gravity-Maze-game-/assets/142156676/924b0b68-768c-4071-8223-03a8ae94ec58)
 
 Game Elements
  
@@ -84,15 +56,7 @@ Game elements are inserted into the maze area from an input queue. The input que
 When an element is inserted into the maze, some game elements are converted into other game elements. In boulder insertion, one boulder is inserted and another boulder disappears. So, the number of boulders are constant during the game.
 
 
-Element	               Convertion Operation                         Generation probability for Input Queue                                             	
-1	                      random empty/earth square -> treasure 1	                   6/40
-2	                      random empty/earth square -> treasure 2	                   5/40
-3	                      random empty/earth square -> treasure 3	                   4/40
-X	                      random empty/earth square -> robot	                       1/40
-O	                      random empty/earth square -> boulder
-                        random boulder -> earth square	                           10/40
-:	                      random empty square -> earth square                      	9/40
-e(empty)	              random earth square -> empty square	                       5/40
+![image](https://github.com/hlnarya/Gravity-Maze-game-/assets/142156676/abfbede6-0885-4bdd-8fa6-bc7154ef1733)
 
 
 
@@ -105,13 +69,7 @@ Game speed is 10 frames per second for all movements (player moves, robot moves,
 When the player reaches a treasure's square, he/she places the number (1, 2, or 3) into the backpack. If the backpack is full, the element on the top is removed and the new taken element is inserted. At the top of the backpack, if two elements are identical numbers, they turn into score and teleport rights. 
 
 
-Two identical numbers          turns into score and teleport right
-1	                                     10 score points
-2	                                     40 score points
-3	                             90 score points and 1 teleport right
-
-
-
+![image](https://github.com/hlnarya/Gravity-Maze-game-/assets/142156676/65ef9a13-1ecf-4a94-aab9-65a4c274423a)
 
 
 Boulder Fall
